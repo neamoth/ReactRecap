@@ -20,9 +20,17 @@ function CreateMyName(){
   );
 }
 
+function CreateAppend(){
+  const text = document.createElement('h1');
+  text.className = "header";
+  text.textContent = "I am from vanilla js";
+  document.body.appendChild(text);
+}
+
 root.render(
   <div>
     <CreateList/>
     <CreateMyName/>
+    <CreateAppend/>
   </div>
 );
