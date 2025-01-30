@@ -29,9 +29,9 @@ function CreateAppend(){
 }
 
 root.render(
-  <Fragment>
+  <>
     <CreateList/>
     <CreateMyName/>
     <CreateAppend/>
-  </Fragment>
+  </>
 );
