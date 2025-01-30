@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import { createRoot } from "react-dom/client";
+import { Fragment } from 'react';
 
 const root  = createRoot(document.querySelector("#root"));
 const reactElement = <h1>Hello im from jsx!</h1>
@@ -28,9 +29,9 @@ function CreateAppend(){
 }
 
 root.render(
-  <div>
+  <Fragment>
     <CreateList/>
     <CreateMyName/>
     <CreateAppend/>
-  </div>
+  </Fragment>
 );
