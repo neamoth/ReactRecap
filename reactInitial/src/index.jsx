@@ -1,10 +1,16 @@
 import {useState} from 'react';
 import { createRoot } from "react-dom/client";
-import { Fragment } from 'react';
 
 const root  = createRoot(document.querySelector("#root"));
 const reactElement = <h1>Hello im from jsx!</h1>
 console.log(reactElement);
+function Header(){
+  return(
+    <>
+    <h1>This is my header</h1>
+    </>
+  )
+}
 function CreateList(){
   return(
     <ul>
@@ -30,6 +36,7 @@ function CreateAppend(){
 
 root.render(
   <>
+    <Header/>
     <CreateList/>
     <CreateMyName/>
     <CreateAppend/>
