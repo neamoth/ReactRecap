@@ -3,11 +3,13 @@ import React from 'react';
 function Counter(){
     const [value, setValue] = React.useState(0)
     function increment(){
-        setValue(value + 1);
+        setValue(preValue => preValue + 1);
+        setValue(preValue => preValue + 1);
         
     }
     function decrement(){
-        setValue(value - 1);
+        setValue(preValue => preValue - 1);
+        setValue(preValue => preValue - 1);
         
     }
     function reset(){
