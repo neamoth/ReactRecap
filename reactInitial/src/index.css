@@ -1,4 +1,7 @@
 body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   background-color: #333;
   color: aliceblue;
 }
@@ -49,4 +52,42 @@ body{
 }
 .family h3{
   font-size: calc(2rem + 8%);
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.card{
+  color: #000;
+  background-color: #fff;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  width: 25%;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+main h1{
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+main .avatar{
+  width: 15vw;
+}
+
+main button{
+  background-color: #fff;
+  border: none;
+}
+
+main .fav{
+  background-color: #fff;
+  width: 25px;
+  ;
 }

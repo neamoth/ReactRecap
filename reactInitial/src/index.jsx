@@ -1,6 +1,7 @@
 import { createRoot } from "react-dom/client";
 import Counter from './component/Counter';
 import AddItem from "./component/AddItem";
+import ContactCard from "./component/ContactCard";
 
 const root  = createRoot(document.querySelector("#root"));
 const reactElement = <h1>Hello im from jsx!</h1>
@@ -43,6 +44,7 @@ root.render(
     <CreateAppend/> */}
     <Counter/>
     <AddItem/>
+    <ContactCard/>
 
   </>
 );
