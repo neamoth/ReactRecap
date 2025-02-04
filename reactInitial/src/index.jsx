@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import { createRoot } from "react-dom/client";
+import Counter from './component/Counter';
 
 const root  = createRoot(document.querySelector("#root"));
 const reactElement = <h1>Hello im from jsx!</h1>
@@ -40,5 +41,7 @@ root.render(
     <CreateList/>
     <CreateMyName/>
     <CreateAppend/>
+    <Counter/>
+
   </>
 );
