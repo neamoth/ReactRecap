@@ -30,3 +30,23 @@ body{
   border: none;
   cursor: pointer;
 }
+
+.family{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.family h1{
+  font-size: calc(3rem + 8%);
+}
+.family button{
+  font-size: calc(1.5rem + 8%);
+  padding: 0.5rem;
+  border-radius: 15px;
+  background-color: #00f7ff;
+}
+.family h3{
+  font-size: calc(2rem + 8%);
+}
