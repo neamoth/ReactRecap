@@ -2,17 +2,18 @@ import { createRoot } from "react-dom/client";
 import Counter from './component/Counter';
 import AddItem from "./component/AddItem";
 import ContactCard from "./component/ContactCard";
+import SignUp from "./component/SignUp";
 
 const root  = createRoot(document.querySelector("#root"));
 const reactElement = <h1>Hello im from jsx!</h1>
 console.log(reactElement);
-function Header(){
-  return(
-    <>
-    <h1>This is my header</h1>
-    </>
-  )
-}
+// function Header(){
+//   return(
+//     <>
+//     <h1>This is my header</h1>
+//     </>
+//   )
+// }
 // function CreateList(){
 //   return(
 //     <ul>
@@ -38,13 +39,15 @@ function Header(){
 
 root.render(
   <>
-    <Header/>
+    <h1>This is a practice website for react</h1>
+    {/* <Header/> */}
     {/* <CreateList/>
     <CreateMyName/>
     <CreateAppend/> */}
     <Counter/>
     <AddItem/>
     <ContactCard/>
+    <SignUp/>
 
   </>
 );
