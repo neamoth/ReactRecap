@@ -3,6 +3,7 @@ import Counter from './component/Counter';
 import AddItem from "./component/AddItem";
 import ContactCard from "./component/ContactCard";
 import SignUp from "./component/SignUp";
+import PropsDocumentation from "./topic/PropsDocumentation";
 
 const root  = createRoot(document.querySelector("#root"));
 const reactElement = <h1>Hello im from jsx!</h1>
@@ -48,6 +49,7 @@ root.render(
     <AddItem/>
     <ContactCard/>
     <SignUp/>
+    <PropsDocumentation />
 
   </>
 );

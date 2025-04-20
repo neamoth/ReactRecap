@@ -1,4 +1,24 @@
-body{
+@import "tailwindcss";
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .flex-center-col {
+    @apply flex items-center justify-center flex-col;
+  }
+}
+
+@layer components {
+  .container {
+    @apply flex items-center justify-center flex-col h-[50dvh] w-full;
+  }
+  .text{
+    @apply text-xl font-bold leading-6 
+  }
+}
+
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,24 +26,23 @@ body{
   color: aliceblue;
 }
 
-.header{
+.header {
   color: red;
 }
 
-.counter{
+.counter {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  
 }
-.counter-container{
+.counter-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.counter button{
+.counter button {
   margin: 10px;
   padding: 5px 10px;
   background-color: #00f7ff;
@@ -34,33 +53,33 @@ body{
   cursor: pointer;
 }
 
-.family{
+.family {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.family h1{
+.family h1 {
   font-size: calc(3rem + 8%);
 }
-.family button{
+.family button {
   font-size: calc(1.5rem + 8%);
   padding: 0.5rem;
   border-radius: 15px;
   background-color: #00f7ff;
 }
-.family h3{
+.family h3 {
   font-size: calc(2rem + 8%);
 }
 
-main{
+main {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 30px;
 }
-.card{
+.card {
   color: #000;
   background-color: #fff;
   min-height: 60vh;
@@ -73,20 +92,20 @@ main{
   border-radius: 30px;
   margin: 0 auto;
 }
-main h1{
+main h1 {
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
 }
-main .avatar{
+main .avatar {
   width: 15vw;
 }
 
-main button{
+main button {
   background-color: #fff;
   border: none;
 }
 
-main .fav{
+main .fav {
   background-color: #fff;
   width: 25px;
 }
@@ -150,6 +169,6 @@ main .fav{
 .signup-form button:hover {
   background-color: #0056b3;
 }
-.signup-form #result{
+.signup-form #result {
   color: #fff;
 }
